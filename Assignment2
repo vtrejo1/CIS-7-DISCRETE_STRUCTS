@@ -1,0 +1,16 @@
+Q.1) Show that p->q and q' -> p' are logically equivalent without using truth tables or a "contrapositive" law (don't assume they are true)
+p-> q <=> q' -> p'          //Rewrite
+p' v q <=> (q')' v p'       //Implication
+p' v q <=> q v p'           //Double Neg
+p' v q <=> p' v q           //Commutative
+
+
+Q.2) Show that (p->r) ^ (q->r) <=> (p v q) -> r
+(P->R) ^ (Q->R)   <=> (P v Q) -> R        // Start
+(P' v R)^(Q' v R) <=> (PvQ)' v R          // Implication
+(P' v R)^(Q' v R) <=> (P'^ Q') v R        // DE MORGANS LAW
+(P' v R)^(Q' v R) <=> (P' v R) ^ (Q' v R) // DISTRIBUTIVE
+
+Give an interpretation to prove that the following wff is not valid: (Ǝx)A(x) ^ (Ǝx)B(x) -> (Ǝx)(A(x)^ B(x))
+There exists some ninjas and some pirates that are both a ninja and a pirate.
+
