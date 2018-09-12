@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 #include <stdio.h>
 #include <ctype.h>
@@ -17,7 +18,7 @@ int main()
 
 		for (char &c : userInput)
 		{
-/*			if (impTest == true)
+			if (impTest == true)
 			{
 				if (c == '>')
 				{
@@ -29,13 +30,13 @@ int main()
 					successXD = false;
 				break;
 				
-			}*/
+			}
 			if (isalpha(c) == true)
 			{
 				if (isStatement == isalpha(c))
 				{
 					successXD = false;
-					break;
+					continue;
 				}
 				else
 					isStatement = true;
@@ -49,7 +50,7 @@ int main()
 				else
 				{
 					successXD = false;
-					break;
+					continue;
 				}
 			}
 			else if (c == '!')
@@ -60,7 +61,7 @@ int main()
 			else if (c == '-')
 			{
 				impTest = true;
-				break;
+				continue;
 			}
 			else if (c == ' ')
 				continue;
@@ -79,4 +80,28 @@ int main()
 	
 	system("pause");
 	return 0;
+}*/
+
+//reg expressions ftw :3
+#include <string>
+#include <regex>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+        string userInput;
+        cout << "Enter Statement ";
+        getline(cin, userInput);
+        cout << endl;
+
+        if(regex_match(userInput, regex("(\\!?[A-Z])((v|\\^|\\-\\>)(\\!?[A-Z]))+")))
+            cout << "Is a WFF" << endl;
+        else
+            cout << "Is NOT a WFF" << endl;
+
+
+        system("pause");
+    return 0;
 }
