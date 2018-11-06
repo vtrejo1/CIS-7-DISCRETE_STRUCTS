@@ -4,13 +4,34 @@ Let S = it is sunny, C = camping is fun, H = the homework is
 done, and M = mathematics is easy.
 
     Translate into English: (M → H)∧(S →C)
+        If mathematics is easy then the homework is done and if it is sunny then camping is fun.
+    
     Translate into Propositional Logic: “Mathematics is easy or camping is fun, as long as it is sunny and the homework is done.”
-
+        (M v C) <-> (S ^ H)
+        
+        
 Part 2: (5 points)
 
-    Use a truth table to determine whether this is a tautology, contradiction, or neither: (¬B → ¬A) → ((¬B → A) → B)
-    Use a truth table to determine whether this is a tautology, contradiction, or neither: ((A → B)∧(B → ¬A)) → A
-
+  Use a truth table to determine whether this is a tautology, contradiction, or neither: (¬B → ¬A) → ((¬B → A) → B)
+                         P           Q          R
+    A 	B 	¬A 	¬B 	(¬B -> ¬A) 	(¬B -> A) 	(Q -> B)    (P -> R)
+    T 	T 	 F 	 F 	        T 		    T          T          T
+    T 	F 	 F 	 T 	        F 		    F          F          T
+    F 	T 	 T 	 F 	        T 		    T          T          T
+    F 	F 	 T 	 T 	        T 		    T          T          T
+    
+    Tautology.
+    
+  Use a truth table to determine whether this is a tautology, contradiction, or neither: ((A → B)∧(B → ¬A)) → A
+                        Q           R           S
+    A 	B 	¬A 	¬B 	(A -> B)    (B -> ¬A) 	(Q ^ R)    (S -> A)
+    T 	T 	 F 	 F 	      T 		    F         F          T
+    T 	F 	 F 	 T 	      F 		    T         F          T
+    F 	T 	 T 	 F 	      T 		    T         T          F
+    F 	F 	 T 	 T 	      T 		    T         T          F
+    niether. 
+    
+    
 Part 3: (5 points)
 
 For each of the following pairs of propositions, show that the
@@ -19,7 +40,21 @@ to the other. State which definition or law of logic justifies each equivalence 
 chain.
 
     (p ∧ q) → r , p → (q → r )
+    
+      1. (p ∧ q) → r = !(!p v !q) -> r      DeMorgans Law
+      2.             = !(!(!p v !q) v r     Implication
+                     = (!p v !q) v r        Double Negative
+                     = !p v (!q v r)        Associative
+                     = p -> (q -> r)        Implication
+
+    
     (q ∨ r ) → p, (q → p)∧(r → p)
+    
+      1. (q ∨ r ) → p = !(q v r) v p            Implication
+      2.              = (!q ^ !r) v p           Demorgans Law
+      3.              = (!q v p) ^ (!r v p)     Distributive
+      4.              = (q -> p) ^ (r -> p)     Implication
+     
 
 Part 4: (5 points)
 
