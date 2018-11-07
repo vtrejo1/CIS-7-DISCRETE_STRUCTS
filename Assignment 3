@@ -4,10 +4,12 @@ Let S = it is sunny, C = camping is fun, H = the homework is
 done, and M = mathematics is easy.
 
     Translate into English: (M → H)∧(S →C)
-        If mathematics is easy then the homework is done and if it is sunny then camping is fun.
+    
+        A: If mathematics is easy then the homework is done and if it is sunny then camping is fun.
     
     Translate into Propositional Logic: “Mathematics is easy or camping is fun, as long as it is sunny and the homework is done.”
-        (M v C) <-> (S ^ H)
+        
+        A: (M v C) <-> (S ^ H)
         
         
 Part 2: (5 points)
@@ -61,16 +63,35 @@ Part 4: (5 points)
 Let Loves(x,y) mean “x loves y,” Traveler(x) mean “x is a traveler,”
 City(x) mean “x is a city,” Lives(x,y) mean “x lives in y.”
 
-    Translate into English: ∃x∀y∀z(City(x) ∧ Traveler (y)∧Li ves(z,x)) → (Loves(y,x)∧ ¬Loves(z,x))
+    Translate into English: ∃x∀y∀z(City(x) ∧ Traveler (y)∧Lives(z,x)) → (Loves(y,x)∧ ¬Loves(z,x))
+    
+        There exists a city loved by all of the travelers but everyone that lives there does not love it.
+          
     Translate into Predicate Logic: “No traveler loves the city they live in.”
+    
+        ∃x∀y(Traveler(x) ^ City(y) ^ Lives(x,y)) -> ¬loves(x,y)
+        
 
 Extra Credit: (5 points)
 
 Assuming: p → (q ∧ r ), s → r , r → p
 Prove: s → q.
-
+          1. p → (q ∧ r ) Given
+          2. s → r        Given
+          3. r → p        Given
+          4. s -> p       2,3 HS
+          5. p -> q       1 Simplification
+          6. s -> q       4,5 HS Done
+         
+          
+          
 Assuming: ¬(r ∨ s), ¬p → s, p → q. 
 Prove: q
+          1. ¬(r ∨ s)     Given
+          2. ¬p → s       Given
+          3. p → q        Given
+          4. 
+    
 
 HINT:
 Modus Ponen: If x -> q, and x, then q
