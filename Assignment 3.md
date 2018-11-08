@@ -5,11 +5,11 @@ done, and M = mathematics is easy.
 
   Translate into English: (M → H)∧(S →C)
     
-    **A: If mathematics is easy then the homework is done and if it is sunny then camping is fun.**
+    If mathematics is easy then the homework is done and if it is sunny then camping is fun.
     
-   Translate into Propositional Logic: “Mathematics is easy or camping is fun, as long as it is sunny and the homework is done.”
+  Translate into Propositional Logic: “Mathematics is easy or camping is fun, as long as it is sunny and the homework is done.”
         
-    **A: (M v C) <-> (S ^ H)**
+    (M v C) <-> (S ^ H)**
         
         
 Part 2: (5 points)
