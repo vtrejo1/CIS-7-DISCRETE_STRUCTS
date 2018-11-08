@@ -11,7 +11,7 @@ int main()
         getline(cin, userInput);
         cout << endl;
 
-        if(regex_match(userInput, regex("\\!?(\\(+\\!?)*([A-Z])( ((v|V|\\^|\\-\\>) (\\!?(\\(+\\!?)*[A-Z](\\)*))))+")))
+        if(regex_match(userInput, regex("\\!?(\\(+\\!?)*[A-Z]( ((v|V|\\^|\\-\\>) (\\!?(\\(+\\!?)*[A-Z](\\)*))))*")))
         {
         	int pCount = 0;
         	for(char& c : userInput)
