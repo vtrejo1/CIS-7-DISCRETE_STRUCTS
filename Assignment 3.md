@@ -82,8 +82,8 @@ Prove: s → q.
           1. p → (q ∧ r ) Given  
           2. s → r        Given  
           3. r → p        Given  
-          4. s -> p       2,3 HS  
-          5. p -> q       1 Simplification  
+          4. s -> p       2,3 Hypothetical syllogism  
+          5. p -> q       1 Simplification/Conjunc. Elim  
           6. s -> q       4,5 HS **Done**
          
           
@@ -94,7 +94,11 @@ Prove: q
           1. ¬(r ∨ s)     Given  
           2. ¬p → s       Given  
           3. p → q        Given  
-          4. 
+          4. ¬r ^ ¬s      1 DeMorgans Law
+          5. ¬s           4 Simplification/Conj. E.
+          6. ¬¬p          5,2 Modus tollens
+          7. p            6 Negation
+          8. q            7,3 Modus ponen **Done**
     
 
 HINT:
