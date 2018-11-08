@@ -15,22 +15,23 @@ done, and M = mathematics is easy.
 Part 2: (5 points)
 
   Use a truth table to determine whether this is a tautology, contradiction, or neither: (¬B → ¬A) → ((¬B → A) → B)
-                         P           Q          R
-    A 	B 	¬A 	¬B 	(¬B -> ¬A) 	(¬B -> A) 	(Q -> B)    (P -> R)
-    T 	T 	 F 	 F 	        T 		    T          T          T
-    T 	F 	 F 	 T 	        F 		    F          F          T
-    F 	T 	 T 	 F 	        T 		    T          T          T
-    F 	F 	 T 	 T 	        T 		    T          T          T
+                           P             Q          R
+    A |	B |	¬A | ¬B | (¬B -> ¬A) |	(¬B -> A)| 	(Q -> B)|    (P -> R)|
+    T |	T |	 F |  F |	      T  |	        T|         T|           T|
+    T |	F |	 F |  T |	      F  | 	        F|         F|           T|
+    F |	T |	 T |  F |	      T  |	        T|         T|           T|
+    F |	F |	 T |  T |	      T  |		    T|         T|           T|
     
     Tautology.
     
   Use a truth table to determine whether this is a tautology, contradiction, or neither: ((A → B)∧(B → ¬A)) → A
-                        Q           R           S
-    A 	B 	¬A 	¬B 	(A -> B)    (B -> ¬A) 	(Q ^ R)    (S -> A)
-    T 	T 	 F 	 F 	      T 		    F         F          T
-    T 	F 	 F 	 T 	      F 		    T         F          T
-    F 	T 	 T 	 F 	      T 		    T         T          F
-    F 	F 	 T 	 T 	      T 		    T         T          F
+                            Q          R          S
+    A| 	B| 	¬A| 	¬B| (A -> B)|  (B -> ¬A)| 	(Q ^ R)|    (S -> A)|
+    T| 	T| 	 F| 	 F| 	   T| 		   F|         F|           T|
+    T| 	F| 	 F| 	 T| 	   F| 		   T|         F|           T|
+    F| 	T| 	 T| 	 F|        T| 		   T|         T|           F|
+    F| 	F| 	 T| 	 T|        T| 		   T|         T|           F|
+    
     niether. 
     
     
@@ -47,7 +48,7 @@ chain.
       2.             = !(!(!p v !q) v r     Implication
                      = (!p v !q) v r        Double Negative
                      = !p v (!q v r)        Associative
-                     = p -> (q -> r)        Implication
+                     = p -> (q -> r)        Implication Done
 
     
     (q ∨ r ) → p, (q → p)∧(r → p)
@@ -55,7 +56,7 @@ chain.
       1. (q ∨ r ) → p = !(q v r) v p            Implication
       2.              = (!q ^ !r) v p           Demorgans Law
       3.              = (!q v p) ^ (!r v p)     Distributive
-      4.              = (q -> p) ^ (r -> p)     Implication
+      4.              = (q -> p) ^ (r -> p)     Implication Done
      
 
 Part 4: (5 points)
@@ -65,7 +66,7 @@ City(x) mean “x is a city,” Lives(x,y) mean “x lives in y.”
 
     Translate into English: ∃x∀y∀z(City(x) ∧ Traveler (y)∧Lives(z,x)) → (Loves(y,x)∧ ¬Loves(z,x))
     
-        There exists a city loved by all of the travelers but everyone that lives there does not love it.
+        **There exists a city loved by all of the travelers but everyone that lives there does not love it.**
           
     Translate into Predicate Logic: “No traveler loves the city they live in.”
     
