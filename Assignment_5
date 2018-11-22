@@ -103,9 +103,16 @@ Part 2: (10 points)
                          = (k^3 + 2k ) + 3k^2 + 3k + 3
                          = (k^3 + 2k ) + 3(k^2 + k + 1)
         We have proven k is true through the base case, then k + 1 is true by the sum of an integer multiplied by 3 is divisiable by 3.
-        
-        
-        
-                         
-    
+ 
     Prove that for n >= 1, 9^n − 1 is divisible by 8 for all non-negative integers Hint: 4^(3+1) = 4 * 4^3 Hint: If 9^n - 1 = 8m, then 9^n = 8m + 1
+        Base case: Assume n = 1
+        9^(1) - 1 = 8
+        8 = 8
+       
+        Lets assume true for all k
+        9^(k+1) - 1 = 8
+        (9^k)(9^1) - 1 = 8
+        (9^k) * 9 = 9
+        9^k = 1
+        
+        
