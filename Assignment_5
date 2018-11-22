@@ -38,15 +38,38 @@ Proove each of the following. Indicate which proof method you are using and show
         x + y = 2n + 1 + 2m + 1 
         x + y = 2n + 2m + 2 
         x + y = 2(n + m) + 2 
-        let n + m = p some integer
+        let n + m = p            some integer
         x + y = 2(p) + 2 = 2(p + 2)
-        let k = (p + 2) some integer
+        let k = (p + 2)          some integer
         x + y = 2k 
-        the sum of 2 odd integeres is even by definition of an even integer.
+        the sum of 2 odd integers is even by definition of an even integer.
     
     The sum of an even integer and it's square is even
-    
+        Direct proof
+        let x = 2n + 1      Def. of an even number.
+        x + x^2 = 2n + 1 + (2n + 1)^2 
+        x + x^2 = 2n + 1 + 4n^2 + 4n + 1
+        x + x^2 = 6n + 2 + 4n^2 
+        x + x^2 = 2(2n^2 + 3n + 1)
+        x + x^2 = 2((2n + 1)(n + 1))
+        let m = 2n + 1, p = n + 1 , some integers
+        x + x^2 = 2(m*p)
+        the product of 2 and some int/s are even by definition.
+        therefore the sum of an even integer and it's square is even.
+        
     If n squared is odd, then n is odd
+        Proof by contradiction
+        Assume n^2 is odd but n is even.
+        let n = 2m
+        n^2 = (2m)^2
+        n^2 = 4m^2
+        let p = 2k^2 where p is some integer
+        n^2 = 2(p)
+        2 times some integer is even by definition
+        therefore our assumption of n being even is a contradiction.
+        thus n is odd as long as n squared is odd.
+        
+        
 
 Part 2: (10 points)
 
