@@ -3,9 +3,49 @@ Part 1: (10 points)
 Proove each of the following. Indicate which proof method you are using and show your work.
 
     Show that the square root of 2 is irrational.
+        Proof by contradiction.
+        Assume √2 is a rational number
+        let √2 = q/p Definition of a rational number
+        Assume q/p are co-coprime numbers
+        √2 = q/p
+        2 = (p^2)/q^2
+        2(q^2) = p^2      P^2 is even due to being equal to 2 times some number, therefore p is will also be an even number.
+        2(q^2) = (2n)^2   p = 2n by definition of an even number.
+        2(q^2) = 4n^2
+        q^2 = 2n^2        q^2 is also even due to being equal to an even number, there for p will aslo be even
+        4m^2 = 2n^2       p =2m definition of an even number.
+        √2 = p/q = 2n/2m = n/m 
+        By reducing the equivlent ratio, we can conclude that the ratio p/q are not co-prime
+        thus contradicts the initial assumption. Therefore  √2 cannot be rational.
+    
     If n = 25, 100, or 169, then n is a perfect square and is the sum of two perfect squares.
+        Direct by exhaustion 
+        let m = √n, √n, √n
+        m = 5, 10, 13
+        n = m^2, m^2, m^2= 25, 100, 169 n is a perfet square by definition of a perfect square.
+        
+        n = 9 + 16, 36 + 64, 25 + 144
+        n = 3^2 + 4^2, 6^2 + 8^2, 5^2 + 12^2 
+        n is the sum of 2 perfect squares.
+        
+        
     The sum of two odd integers is even. Hint: By definition, even integers can be expressed as 2n, thus odd integers can be expressed as 2n + 1
+    
+        Direct proof
+        let x = 2n + 1 Def. of an odd number.
+        let y = 2m + 1 Def. of an odd number.
+        
+        x + y = 2n + 1 + 2m + 1 
+        x + y = 2n + 2m + 2 
+        x + y = 2(n + m) + 2 
+        let n + m = p some integer
+        x + y = 2(p) + 2 = 2(p + 2)
+        let k = (p + 2) some integer
+        x + y = 2k 
+        the sum of 2 odd integeres is even by definition of an even integer.
+    
     The sum of an even integer and it's square is even
+    
     If n squared is odd, then n is odd
 
 Part 2: (10 points)
