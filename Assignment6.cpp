@@ -20,17 +20,17 @@ int main()
 
 	    auto start = chrono::steady_clock::now();
 	    gcd(num, div);
-		auto end = chrono::steady_clock::now();
-		auto diff = end - start;
+	    auto end = chrono::steady_clock::now();
+	    auto diff = end - start;
 
-		cout << chrono::duration <double, milli> (diff).count() << " ms" << endl;
-	}while(runPrompt());     
+	    cout << chrono::duration <double, milli> (diff).count() << " ms" << endl;
+    }while(runPrompt());     
 }
 
 void inputPrompt(int& num, int& div)
 {
 	
-	cout << "Enter Numerator and denominator: ";
+    cout << "Enter Numerator and denominator: ";
     if(!(cin >> num >> div))
     {
     	cout << "Invalid input! Please try again!" << endl;
